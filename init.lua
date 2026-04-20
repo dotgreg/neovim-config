@@ -10,3 +10,6 @@ vim.api.nvim_create_autocmd("BufEnter", {
     vim.opt.formatoptions:remove({ "o", "r" })
   end,
 })
+
+-- GREG > leaving terminal on esc
+vim.keymap.set('t', '<esc>', '<C-\\><C-n>', { noremap = true, silent = true })

@@ -4,9 +4,9 @@ local t = luasnip.text_node
 luasnip.add_snippets("all", {
   s("block_fn", {
     t({ "# %%", "e, api = s('')", "def fn():" }), -- Line 1
-    t({ "", "    " }), -- Line 2 (indented)
-    i(0), -- Cursor on Line 3
-    t({ "", "fn()" }), -- Line 4
+    t({ "", "    " }),                            -- Line 2 (indented)
+    i(0),                                         -- Cursor on Line 3
+    t({ "", "fn()" }),                            -- Line 4
   }),
 })
 luasnip.add_snippets("all", {
@@ -15,5 +15,10 @@ luasnip.add_snippets("all", {
   }),
   s("wooop", {
     t("woop hello, world"),
+  }),
+})
+luasnip.add_snippets("all", {
+  s("git", {
+    t({ "git add .; git commit -m 'up'; git push origin master" }), -- Line 1
   }),
 })
