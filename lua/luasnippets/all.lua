@@ -22,3 +22,19 @@ luasnip.add_snippets("all", {
     t({ "git add .; git commit -m 'up'; git push origin master" }), -- Line 1
   }),
 })
+luasnip.add_snippets("all", {
+  s("comment_md", {
+    t({ "#", "#", "#" }),     -- Line 1
+    t({ "", "#  " }),         -- Line 2 (indented)
+    i(0),                     -- Cursor on Line 3
+    t({ "", "#", "#", "#" }), -- Line 1
+  })
+})
+luasnip.add_snippets("all", {
+  s("comment_big", {
+    t({ "##############################################", "#", "#" }),    -- Line 1
+    t({ "", "#  " }),                                                     -- Line 2 (indented)
+    i(0),                                                                 -- Cursor on Line 3
+    t({ "", "#", "#", "#############################################" }), -- Line 1
+  })
+})
