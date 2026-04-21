@@ -12,4 +12,7 @@ vim.api.nvim_create_autocmd("BufEnter", {
 })
 
 -- GREG > leaving terminal on esc
-vim.keymap.set('t', '<esc>', '<C-\\><C-n>', { noremap = true, silent = true })
+vim.keymap.set("t", "<esc>", "<C-\\><C-n>", { noremap = true, silent = true })
+
+-- GREG > template
+require("catppuccin").load("latte")
