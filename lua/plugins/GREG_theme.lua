@@ -11,16 +11,15 @@ return {
   --
   -- },
 
-  -- {
-  --   "loctvl842/monokai-pro.nvim",
-  --   lazy = false,
-  --   priority = 1000,
-  --   config = function()
-  --     require("monokai-pro").setup()
-  --     vim.cmd.colorscheme("classic")
-  --   end,
-  -- },
-  --
+  {
+    "loctvl842/monokai-pro.nvim",
+    lazy = false,
+    priority = 1000,
+    config = function()
+      require("monokai-pro").setup()
+      --vim.cmd.colorscheme("classic")
+    end,
+  },
 
   -- { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
   --
