@@ -19,7 +19,16 @@ return {
             },
             python = {
               -- command = { "python3" }, -- or { "ipython", "--no-autoindent" }
-              command = { "ipython", "--no-autoindent" },
+              -- command = { "ipython", "--no-autoindent", "--simple-prompt",  },
+              -- command = { "ipython", "--no-autoindent", "--quiet", "--no-banner", "--simple-prompt" },
+              -- command = { "ipython", "--no-autoindent", "--quiet", "--profile=ipyprofile", "--InteractiveShell.colors='NoColor'" },
+              -- command = { "ipython", "--no-autoindent", "--quiet", "--InteractiveShell.colors=NoColor" },
+              command = { "ipython", "--no-autoindent", "--quiet", "--colors=NoColor" },
+              -- command = { "ipython", "--no-autoindent", "--quiet", "--colors=lightbg" },
+              -- command = { "ipython", "--no-autoindent", "--quiet", "--colors=lightbg" },
+              --command = { "ipython", "--no-autoindent", "--quiet", "--colors=pride" },
+              -- command = { "python" },
+              -- command = { "ipython", "--no-autoindent", "--nosep" },
               format = common.bracketed_paste_python,
               block_dividers = { "# %%", "#%%" },
               env = { PYTHON_BASIC_REPL = "1" }, --this is needed for python3.13 and up.
@@ -70,7 +79,7 @@ return {
           send_until_cursor = "<space>su",
           send_mark = "<space>sm",
           send_code_block = "<space>sb",
-          send_code_block_and_move = "<space>sn",
+          send_code_block_and_move = "<space>sm",
           mark_motion = "<space>mc",
           mark_visual = "<space>mc",
           remove_mark = "<space>md",
@@ -81,9 +90,9 @@ return {
         },
         -- If the highlight is on, you can change how it looks
         -- For the available options, check nvim_set_hl
-        highlight = {
-          italic = true,
-        },
+        -- highlight = {
+        --   italic = true,
+        -- },
         ignore_blank_lines = true, -- ignore blank lines when sending visual select lines
       })
 

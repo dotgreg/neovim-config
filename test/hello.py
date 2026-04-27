@@ -7,6 +7,55 @@
 #
 #
 
+# %%
+print("hello world")
+
+
+
+
+
+
+print("hello world2")
+
+
+
+
+# %%
+##############################################
+#
+#
+#  ERROR STOP TESTING
+#
+#
+#############################################
+e, api = s('')
+raise Exception("TEST") 
+he
+print("SHOULD NOT BE PRINTED")
+print("SHOULD NOT BE PRINTED")
+print("SHOULD NOT BE PRINTED")
+print("SHOULD NOT BE PRINTED")
+print("SHOULD NOT BE PRINTED")
+print("SHOULD NOT BE PRINTED")
+
+
+
+
+print("hello world3")
+
+# %%
+##############################################
+#
+#
+#  
+#
+#
+#############################################
+e, api = s('')
+def fn():
+    print(123)
+out = fn()
+e(a)
 
 
 # %%

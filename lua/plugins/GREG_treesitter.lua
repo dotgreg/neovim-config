@@ -1,4 +1,5 @@
 return {
+
   {
     "nvim-treesitter/nvim-treesitter",
     branch = "main",
@@ -131,3 +132,4 @@ return {
       })
     end,
   },
+}
