@@ -45,13 +45,23 @@ luasnip.add_snippets("all", {
     t("woop hello, world"),
   }),
 })
+luasnip
+  .add_snippets("all", {
+    s(".git", {
+      t({ "git add .; git commit -m 'up'; git push origin master" }), --
+    }),
+  .add_snippets("all", {
+    s(".documentation", {
+      t({ '"""', "# Documentation", "", "" }),
+      t({ "## " }),
+      i(1, "example"),
+      t({ "", "```python", "" }),
+      i(0),
+      t({ "", "```", '"""' }),
+    }),
+  })
 luasnip.add_snippets("all", {
-  s(".git", {
-    t({ "git add .; git commit -m 'up'; git push origin master" }), --
-  }),
-})
-luasnip.add_snippets("all", {
-  s(".comment_md", {
+  s(".comment_md2", {
     t({ "#", "#", "#" }),
     t({ "", "#  " }),
     i(0),
@@ -59,10 +69,27 @@ luasnip.add_snippets("all", {
   }),
 })
 luasnip.add_snippets("all", {
-  s(".comment_big", {
-    t({ "##############################################", "#", "#" }), --
-    t({ "", "#  " }), --
-    i(0), --
-    t({ "", "#", "#", "#############################################" }), --
+  s(".comment_md2", {
+    t({ "#", "#", "#" }),
+    t({ "", "#  " }),
+    i(0),
+    t({ "", "#", "#", "#" }),
   }),
 })
+luasnip
+  .add_snippets("all", {
+    s(".comment_md", {
+      t({ "#==================================================" }), --
+      t({ "", "#  " }), --
+      i(0), --
+      t({ "", "#==================================================" }), --
+    }),
+  }).luasnip
+  .add_snippets("all", {
+    s(".comment_big", {
+      t({ "##############################################", "#", "#" }), --
+      t({ "", "#  " }), --
+      i(0), --
+      t({ "", "#", "#", "#############################################" }), --
+    }),
+  })
