@@ -58,6 +58,7 @@ out = fn()
 e(a)
 
 
+
 # %%
 ##########################################################################################
 #
@@ -71,6 +72,25 @@ def fn():
     
 out = fn()
 e(a)
+
+
+
+# create a function which gives time
+def generateTime():
+    import time
+    return time.ctime()
+
+# create a function which takes a country name either france or india and gives the current time in that country
+def generateTimeInCountry(country):
+    import time
+    if country == "france":
+        return time.ctime()
+    elif country == "india":
+        return time.ctime()
+    else:
+        return "country not supported"
+
+
 
 # %%
 ##############################################
@@ -187,6 +207,8 @@ def fn(i):
     fdsalkfdsaj
 out = fn(i)
 e(a)
+
+.
 
 # %%
 ##########################################################################################
